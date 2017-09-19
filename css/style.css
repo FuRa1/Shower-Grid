@@ -59,8 +59,7 @@
   filter: hue-rotate(900deg); }
 
 .grid-container {
-  margin-bottom: 20px;
-  background-color: black; }
+  margin-bottom: 20px; }
   .grid-container__item {
     background-color: chartreuse;
     text-align: center; }
