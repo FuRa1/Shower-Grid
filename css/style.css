@@ -76,6 +76,30 @@
     font-size: 20px;
     line-height: 25px; }
 
+#cover.slide {
+  background-image: url("./../pictures/grid-cover.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  #cover.slide h2 {
+    margin: 150px 0 0;
+    color: #FFF;
+    -webkit-text-stroke: 1px black;
+    text-align: center;
+    font-size: 120px; }
+  #cover.slide p {
+    margin: 10px 10px 0;
+    text-align: center;
+    color: #FFF;
+    font-style: italic;
+    font-size: 80px;
+    -webkit-text-stroke: 1px black; }
+  #cover.slide p a {
+    color: #FFF;
+    text-decoration: none;
+    background: none;
+    -webkit-text-stroke: 1px black; }
+
 .grid-container {
   display: grid;
   grid-column-gap: 3px;
