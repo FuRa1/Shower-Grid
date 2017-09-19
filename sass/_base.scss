@@ -1,6 +1,6 @@
 @for $i from 1 through 20{
-  .#{grid-container__item}--#{$i}{
-       filter: hue-rotate(#{45*$i}deg);
+  .#{grid-container__item}:nth-of-type(#{$i}){
+    filter: hue-rotate(#{45*$i}deg);
   }
 }
 .grid-container{
@@ -10,9 +10,17 @@
     background-color: chartreuse;
     text-align: center;
   }
-  &__text{
+}
+.grid-container--border-items{
+  .grid-container__text{
     font-size: 24px;
     border: 3px solid darken(chartreuse, 30%);
+  }
+}
+.grid-container.grid-container--clear-items{
+  .grid-container__item{
+    filter: none;
+    background-color: white;
   }
 }
 
