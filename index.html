@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Shower Presentation Engine</title>
+	<title>CSS Grid</title>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="node_modules/shower-ribbon/styles/screen-16x10.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
-<body class="shower list">
+<body class="shower list custom">
 
 	<header class="caption">
-		<h1>Shower Presentation Engine</h1>
-		<p>Yours Truly, Famous Inc.</p>
+		<h1>CSS Grid Layout</h1>
+		<p></p>
 	</header>
 
 	<section class="slide" id="cover">
-		<h2>Shower Presentation Engine</h2>
+		<h2>CSS Grid Engine</h2>
 		<p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
 		<figure>
-			<img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
+			<img class="cover" src="pictures/grid-cover.jpg" alt="Hands on the grid">
 			<figcaption class="white">
 				<a href="http://fiftyfootshadows.net/">© John Carey</a>
 			</figcaption>
@@ -31,11 +32,11 @@
 				font-size:70px;
 				}
 			#cover p {
-				margin:10px 0 0;
+				margin:10px 10px 0;
 				text-align:center;
 				color:#FFF;
 				font-style:italic;
-				font-size:20px;
+				font-size:50px;
 				}
 				#cover p a {
 					color:#FFF;
@@ -44,27 +45,98 @@
 	</section>
 
 	<section class="slide">
-		<h2>Shower key features</h2>
-		<ol>
-			<li>Built on HTML, CSS and vanilla JavaScript</li>
-			<li>Works in all modern browsers</li>
-			<li>Themes are separated from engine</li>
-			<li>Modular and extensible</li>
-			<li>Fully keyboard accessible</li>
-			<li>Printable to PDF</li>
-		</ol>
-		<p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
+        <div class="grid-container grid-container--1">
+            <div class="grid-container__item grid-container__item--1">
+                <div class="grid-container__text">Item #1</div>
+            </div>
+            <div class="grid-container__item grid-container__item--2">
+                <div class="grid-container__text">Item #2</div>
+            </div>
+            <div class="grid-container__item grid-container__item--3">
+                <div class="grid-container__text">Item #3</div>
+            </div>
+            <div class="grid-container__item grid-container__item--4">
+                <div class="grid-container__text">Item #4</div>
+            </div>
+            <div class="grid-container__item grid-container__item--5">
+                <div class="grid-container__text">Item #5</div>
+            </div>
+            <div class="grid-container__item grid-container__item--6">
+                <div class="grid-container__text">Item #6</div>
+            </div>
+            <div class="grid-container__item grid-container__item--7">
+                <div class="grid-container__text">Item #7</div>
+            </div>
+            <div class="grid-container__item grid-container__item--8">
+                <div class="grid-container__text">Item #8</div>
+            </div>
+            <div class="grid-container__item grid-container__item--9">
+                <div class="grid-container__text">Item #9</div>
+            </div>
+            <div class="grid-container__item grid-container__item--10">
+                <div class="grid-container__text">Item #10</div>
+            </div>
+            <div class="grid-container__item grid-container__item--11">
+                <div class="grid-container__text">Item #11</div>
+            </div>
+            <div class="grid-container__item grid-container__item--12">
+                <div class="grid-container__text">Item #12</div>
+            </div>
+        </div>
+        <pre>
+            <code>.container {</code>
+			<code>height: 300px;</code>
+            <code>background-color: black;</code>
+			<code class="mark">display: grid;</code>
+			<code class="mark">grid-column-gap: 3px;</code>
+			<code class="mark">grid-row-gap: 3px;</code>
+			<code class="mark">grid-template-rows: 25% 1fr auto; }</code>
+		</pre>
+
 	</section>
 
-	<section class="slide">
-		<h2>Plain text on your slides</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
-	</section>
-
-	<section class="slide">
-		<h2>Two columns if you like</h2>
-		<p class="double">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-	</section>
+    <section class="slide">
+        <div class="grid-container grid-container--2">
+            <div class="grid-container__item grid-container__item--1">
+                <div class="grid-container__text">Item #1</div>
+            </div>
+            <div class="grid-container__item grid-container__item--2">
+                <div class="grid-container__text">Item #2</div>
+            </div>
+            <div class="grid-container__item grid-container__item--3">
+                <div class="grid-container__text">Item #3</div>
+            </div>
+            <div class="grid-container__item grid-container__item--4">
+                <div class="grid-container__text">Item #4</div>
+            </div>
+            <div class="grid-container__item grid-container__item--5">
+                <div class="grid-container__text">Item #5</div>
+            </div>
+            <div class="grid-container__item grid-container__item--6">
+                <div class="grid-container__text">Item #6</div>
+            </div>
+            <div class="grid-container__item grid-container__item--7">
+                <div class="grid-container__text">Item #7</div>
+            </div>
+            <div class="grid-container__item grid-container__item--8">
+                <div class="grid-container__text">Item #8</div>
+            </div>
+            <div class="grid-container__item grid-container__item--9">
+                <div class="grid-container__text">Item #9</div>
+            </div>
+        </div>
+        <pre>
+            <code>.container {</code>
+			<code>grid-template-columns: repeat(2, 1fr) repeat(2, 2fr) 3fr;</code>
+			<code>grid-template-rows:  repeat(3, 1fr); }</code>
+            <code>.item8 {</code>
+			<code>grid-column-start: 3; grid-column-end: 5;</code>
+			<code>grid-row-start: 2; grid-row-end: 4; }</code>
+            <code>.item9 {</code>
+			<code>grid-column-start: 4; grid-column-end: 6;</code>
+			<code>grid-row-start: 3; grid-row-end: 4; }</code>
+		</pre>
+    </section>
 
 	<section class="slide">
 		<h2>All kind of lists</h2>
@@ -199,6 +271,7 @@
 	<div class="progress"></div>
 
 	<script src="node_modules/shower-core/shower.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 	<!-- Copyright © 2017 Yours Truly, Famous Inc. -->
 
 </body>

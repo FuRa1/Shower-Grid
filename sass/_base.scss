@@ -1,0 +1,28 @@
+@for $i from 1 through 20{
+  .#{grid-container__item}--#{$i}{
+       filter: hue-rotate(#{45*$i}deg);
+  }
+}
+.grid-container{
+  margin-bottom: 20px;
+  background-color: black;
+  &__item{
+    background-color: chartreuse;
+    text-align: center;
+  }
+  &__text{
+    font-size: 24px;
+    border: 3px solid darken(chartreuse, 30%);
+  }
+}
+
+.custom .slide{
+  padding: 15px 100px 0;
+  &::after{
+    right: 30px;
+  }
+  pre, code{
+    font-size: 20px;
+    line-height: 25px;
+  }
+}

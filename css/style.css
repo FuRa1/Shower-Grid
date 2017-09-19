@@ -1,0 +1,103 @@
+.grid-container__item--1 {
+  filter: hue-rotate(45deg); }
+
+.grid-container__item--2 {
+  filter: hue-rotate(90deg); }
+
+.grid-container__item--3 {
+  filter: hue-rotate(135deg); }
+
+.grid-container__item--4 {
+  filter: hue-rotate(180deg); }
+
+.grid-container__item--5 {
+  filter: hue-rotate(225deg); }
+
+.grid-container__item--6 {
+  filter: hue-rotate(270deg); }
+
+.grid-container__item--7 {
+  filter: hue-rotate(315deg); }
+
+.grid-container__item--8 {
+  filter: hue-rotate(360deg); }
+
+.grid-container__item--9 {
+  filter: hue-rotate(405deg); }
+
+.grid-container__item--10 {
+  filter: hue-rotate(450deg); }
+
+.grid-container__item--11 {
+  filter: hue-rotate(495deg); }
+
+.grid-container__item--12 {
+  filter: hue-rotate(540deg); }
+
+.grid-container__item--13 {
+  filter: hue-rotate(585deg); }
+
+.grid-container__item--14 {
+  filter: hue-rotate(630deg); }
+
+.grid-container__item--15 {
+  filter: hue-rotate(675deg); }
+
+.grid-container__item--16 {
+  filter: hue-rotate(720deg); }
+
+.grid-container__item--17 {
+  filter: hue-rotate(765deg); }
+
+.grid-container__item--18 {
+  filter: hue-rotate(810deg); }
+
+.grid-container__item--19 {
+  filter: hue-rotate(855deg); }
+
+.grid-container__item--20 {
+  filter: hue-rotate(900deg); }
+
+.grid-container {
+  margin-bottom: 20px;
+  background-color: black; }
+  .grid-container__item {
+    background-color: chartreuse;
+    text-align: center; }
+  .grid-container__text {
+    font-size: 24px;
+    border: 3px solid #336600; }
+
+.custom .slide {
+  padding: 15px 100px 0; }
+  .custom .slide::after {
+    right: 30px; }
+  .custom .slide pre, .custom .slide code {
+    font-size: 20px;
+    line-height: 25px; }
+
+.grid-container {
+  display: grid;
+  grid-column-gap: 3px;
+  grid-row-gap: 3px;
+  background-color: black; }
+
+.grid-container--1 {
+  height: 330px;
+  grid-template-columns: 130px 1fr 2fr auto;
+  grid-template-rows: 25% 1fr auto; }
+
+.grid-container--2 {
+  height: 330px;
+  grid-template-columns: repeat(2, 1fr) repeat(2, 2fr) 3fr;
+  grid-template-rows: repeat(3, 1fr); }
+  .grid-container--2 .grid-container__item--8 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4; }
+  .grid-container--2 .grid-container__item--9 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4; }

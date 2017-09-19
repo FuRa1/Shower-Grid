@@ -1,3 +1,4 @@
+'use strict';
 const del = require('del');
 const fs = require('fs');
 const gulp = require('gulp');
@@ -8,6 +9,7 @@ const rsync = require('gulp-rsync');
 const sequence = require('run-sequence');
 const zip = require('gulp-zip');
 const pages = require('gulp-gh-pages');
+const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
 
 gulp.task('prepare', () => {
@@ -102,6 +104,12 @@ gulp.task('clean', () => {
 	return del('prepared/**');
 });
 
+gulp.task('sass', function () {
+    return gulp.src('./sass/*.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('./css'));
+});
+
 gulp.task('serve', () => {
 	browserSync.init({
 		ui: false,
@@ -111,9 +119,10 @@ gulp.task('serve', () => {
 			baseDir: '.'
 		}
 	});
-	gulp.watch('index.html').on('change', () => {
+	gulp.watch(['index.html', 'css/*.css']).on('change', () => {
     	browserSync.reload();
 	});
+    gulp.watch('./sass/**/*.scss', ['sass']);
 });
 
-gulp.task('default', ['serve']);
+gulp.task('default', ['serve', 'sass']);
