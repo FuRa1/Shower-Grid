@@ -1,1 +1,1 @@
-# CSS Grid Presentation Template
+# CSS Grid Presentation
