@@ -1,7 +1,7 @@
 .grid-container{
   display: grid;
   grid-column-gap: 5px;
-  grid-row-gap: 5px;
+  grid-row-gap: 5px; // grid-gap: 5px 5px;
 }
 
 .grid-container--1{
@@ -14,13 +14,6 @@
     text-transform: uppercase;
     position: relative;
   }
-  span{
-    position: absolute;
-    font-size: 18px;
-    color: darken(#ddd, 30%);
-    left: 3px;
-    top: -6px;
-  }
   .grid-area{
     border-color: rgb(138, 0, 84);
     grid-column: 2 / 4;
@@ -28,9 +21,6 @@
     &:hover {
       background: rgb(138, 0, 84);
       color: white;
-      span{
-        color: white;
-      }
     }
   }
   .grid-column{
@@ -41,9 +31,6 @@
       background: rgba(2, 143, 118, .8);
       color: white;
       z-index: 1;
-      span{
-        color: white;
-      }
     }
   }
   .grid-row{
@@ -55,9 +42,6 @@
       background: rgba(38, 95, 163, .8);
       color: white;
       z-index: 1;
-      span{
-        color: white;
-      }
     }
   }
   .grid-cell{
@@ -65,9 +49,6 @@
     &:hover {
       background: rgb(255, 0, 72);
       color: white;
-      span{
-        color: white;
-      }
     }
   }
 }
@@ -90,5 +71,4 @@
     grid-column: 4 / 6;
     grid-row: 3 / 4;
   }
-
 }

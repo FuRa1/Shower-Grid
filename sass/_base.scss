@@ -1,6 +1,19 @@
 @for $i from 1 through 20{
   .#{grid-container__item}:nth-of-type(#{$i}){
+    position: relative;
     filter: hue-rotate(#{45*$i}deg);
+    padding: 7px 5px;
+    &::before{
+      content: '#{$i}';
+      display: block;
+      font-size: 18px;
+      color: black;
+      line-height: 18px;
+      font-weight: 600;
+      left: 2px;
+      top: 2px;
+      position: absolute;
+    }
   }
 }
 .grid-container{

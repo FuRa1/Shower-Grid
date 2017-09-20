@@ -16,7 +16,7 @@
 	</header>
 
 	<section class="slide" id="cover">
-		<h2>CSS Grid Basics</h2>
+		<h2>CSS Grid Layout Basics</h2>
 		<p>by <a> Boris Grevtsov </a></p>
 	</section>
 
@@ -24,64 +24,49 @@
         <h2>New Terminology</h2>
         <div class="grid-container grid-container--clear-items grid-container--1">
             <div class="grid-container__item grid-cell">
-                <span>1</span>
-                <div class="grid-container__text">Grid cell</div>
+                <span class="grid-container__text">Grid cell</span>
             </div>
             <div class="grid-container__item">
-                <span>2</span>
-                <div class="grid-container__text"></div>
+                <span class="grid-container__text"></span>
             </div>
             <div class="grid-container__item">
-                <span>3</span>
-                <div class="grid-container__text"></div>
+                <span class="grid-container__text"></span>
             </div>
             <div class="grid-container__item">
-                <span>4</span>
-                <div class="grid-container__text"></div>
+                <span class="grid-container__text"></span>
             </div>
             <div class="grid-container__item grid-column">
-                <span>5</span>
-                <div class="grid-container__text">Grid Track (column)</div>
+                <span class="grid-container__text">Grid Track (column)</span>
             </div>
             <div class="grid-container__item grid-area">
-                <span>6</span>
-                <div class="grid-container__text">Grid area</div>
+                <span class="grid-container__text">Grid area</span>
             </div>
             <div class="grid-container__item">
-                <span>7</span>
-                <div class="grid-container__text"></div>
+                <span class="grid-container__text"></span>
             </div>
             <div class="grid-container__item grid-row">
-                <span>8</span>
-                <div class="grid-container__text">Grid Track (Row)</div>
+                <span class="grid-container__text">Grid Track (Row)</span>
             </div>
             <div class="grid-container__item">
-                <span>9</span>
-                <div class="grid-container__text"></div>
+                <span class="grid-container__text"></span>
             </div>
             <div class="grid-container__item">
-                <span>10</span>
-                <div class="grid-container__text"></div>
+                <span class="grid-container__text"></span>
             </div>
             <div class="grid-container__item">
-                <span>11</span>
-                <div class="grid-container__text"></div>
+                <span class="grid-container__text"></span>
             </div>
             <div class="grid-container__item">
-                <span>12</span>
-                <div class="grid-container__text"></div>
+                <span class="grid-container__text"></span>
             </div>
             <div class="grid-container__item">
-                <span>13</span>
-                <div class="grid-container__text"></div>
+                <span class="grid-container__text"></span>
             </div>
             <div class="grid-container__item">
-                <span>14</span>
-                <div class="grid-container__text"></div>
+                <span class="grid-container__text"></span>
             </div>
             <div class="grid-container__item">
-                <span>15</span>
-                <div class="grid-container__text"></div>
+                <span class="grid-container__text"></span>
             </div>
         </div>
     </section>
@@ -89,51 +74,51 @@
 	<section class="slide">
         <div class="grid-container grid-container--2">
             <div class="grid-container__item">
-                <div class="grid-container__text">Item #1</div>
+                <span class="grid-container__text"></span>
             </div>
             <div class="grid-container__item">
-                <div class="grid-container__text">Item #2</div>
+                <span class="grid-container__text"></span>
             </div>
             <div class="grid-container__item">
-                <div class="grid-container__text">Item #3</div>
+                <span class="grid-container__text"></span>
             </div>
             <div class="grid-container__item">
-                <div class="grid-container__text">Item #4</div>
+                <span class="grid-container__text"></span>
             </div>
             <div class="grid-container__item">
-                <div class="grid-container__text">Item #5</div>
+                <span class="grid-container__text"></span>
             </div>
             <div class="grid-container__item">
-                <div class="grid-container__text">Item #6</div>
+                <span class="grid-container__text"></span>
             </div>
             <div class="grid-container__item">
-                <div class="grid-container__text">Item #7</div>
+                <span class="grid-container__text"></span>
             </div>
             <div class="grid-container__item">
-                <div class="grid-container__text">Item #8</div>
+                <span class="grid-container__text"></span>
             </div>
             <div class="grid-container__item">
-                <div class="grid-container__text">Item #9</div>
+                <span class="grid-container__text"></span>
             </div>
             <div class="grid-container__item">
-                <div class="grid-container__text">Item #10</div>
+                <span class="grid-container__text"></span>
             </div>
             <div class="grid-container__item">
-                <div class="grid-container__text">Item #11</div>
+                <span class="grid-container__text"></span>
             </div>
             <div class="grid-container__item">
-                <div class="grid-container__text">Item #12</div>
+                <span class="grid-container__text">Minimum</span>
             </div>
         </div>
         <pre>
             <code><mark>.container</mark> {</code>
             <code>height: 330px;</code>
             <code>background-color: black;</code>
-			<code class="mark">display: grid;<span class="comment"> // grid | inline-grid | subgrid</span> </code>
+			<code class="mark">display: grid;<span class="comment"> // grid | inline-grid | subgrid</span></code>
 			<code class="mark">grid-template-columns: 130px 1fr 2fr auto;</code>
-			<code class="mark">grid-template-rows: 25% 1fr auto; </code>
+			<code class="mark">grid-template-rows: 25% 1fr auto;</code>
             <code class="mark">grid-column-gap: 5px;</code>
-			<code class="mark">grid-row-gap: 5px;</code>
+			<code class="mark">grid-row-gap: 5px; <span class="comment"> // grid-gap: 5px 5px;</span></code>
 			<code>}</code>
 		</pre>
 
@@ -142,31 +127,31 @@
     <section class="slide">
         <div class="grid-container grid-container--3">
             <div class="grid-container__item">
-                <div class="grid-container__text">Item #1</div>
+                <span class="grid-container__text"></span>
             </div>
             <div class="grid-container__item">
-                <div class="grid-container__text">Item #2</div>
+                <span class="grid-container__text"></span>
             </div>
             <div class="grid-container__item">
-                <div class="grid-container__text">Item #3</div>
+                <span class="grid-container__text"></span>
             </div>
             <div class="grid-container__item">
-                <div class="grid-container__text">Item #4</div>
+                <span class="grid-container__text"></span>
             </div>
             <div class="grid-container__item">
-                <div class="grid-container__text">Item #5</div>
+                <span class="grid-container__text"></span>
             </div>
             <div class="grid-container__item">
-                <div class="grid-container__text">Item #6</div>
+                <span class="grid-container__text"></span>
             </div>
             <div class="grid-container__item">
-                <div class="grid-container__text">Item #7</div>
+                <span class="grid-container__text"></span>
             </div>
             <div class="grid-container__item grid-container__item--8">
-                <div class="grid-container__text">Item #8</div>
+                <span class="grid-container__text"></span>
             </div>
             <div class="grid-container__item grid-container__item--9">
-                <div class="grid-container__text">Item #9</div>
+                <span class="grid-container__text"></span>
             </div>
         </div>
         <pre>
