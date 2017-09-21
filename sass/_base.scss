@@ -74,3 +74,9 @@
     -webkit-text-stroke: 1px black;
   }
 }
+
+.grid-container__item-border{
+	align-self: stretch;
+	justify-self: stretch;
+	border: 1px solid #ddd;
+}

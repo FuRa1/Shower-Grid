@@ -156,17 +156,251 @@
         </div>
         <pre>
             <code><mark>.container</mark> {</code>
-			<code>grid-template-columns: repeat(2, 1fr) repeat(2, 2fr) 3fr;</code>
-			<code>grid-template-rows:  repeat(3, 1fr); }</code>
+			<code> grid-template-columns: repeat(2, 1fr) repeat(2, 2fr) 3fr;</code>
+			<code> grid-template-rows:  repeat(3, 1fr); }</code>
             <code><mark>.item8</mark> {</code>
-			<code>grid-column-start: 3; grid-column-end: 5;</code>
-			<code>grid-row-start: 2; grid-row-end: 4; z-index: 1; opacity: 0.8; }</code>
+			<code> grid-column-start: 3; grid-column-end: 5;</code>
+			<code> grid-row-start: 2; grid-row-end: 4; z-index: 1; opacity: 0.8; }</code>
             <code><mark>.item9</mark> {</code>
-			<code>grid-column: 4 / 6;</code>
-			<code>grid-row: 3 / 4; }</code>
+			<code> grid-column: 4 / 6;</code>
+			<code> grid-row: 3 / 4; }</code>
 		</pre>
     </section>
 
+
+	<section class="slide">
+		<div class="grid-container grid-container--7 grid-container--7-1">
+			<div class="grid-container__item">
+				<span class="grid-container__text">start</span>
+			</div>
+			<div class="grid-container__item">
+				<span class="grid-container__text">start</span>
+			</div>
+			<div class="grid-container__item">
+				<span class="grid-container__text">start</span>
+			</div>
+			<div class="grid-container__item">
+				<span class="grid-container__text">start</span>
+			</div>
+			<i class="grid-container__item-border"></i>
+			<i class="grid-container__item-border"></i>
+			<i class="grid-container__item-border"></i>
+			<i class="grid-container__item-border"></i>
+		</div>
+		<div class="grid-container grid-container--7 grid-container--7-2">
+			<div class="grid-container__item">
+				<span class="grid-container__text">center</span>
+			</div>
+			<div class="grid-container__item">
+				<span class="grid-container__text">center</span>
+			</div>
+			<div class="grid-container__item">
+				<span class="grid-container__text">center</span>
+			</div>
+			<div class="grid-container__item">
+				<span class="grid-container__text">center</span>
+			</div>
+			<i class="grid-container__item-border"></i>
+			<i class="grid-container__item-border"></i>
+			<i class="grid-container__item-border"></i>
+			<i class="grid-container__item-border"></i>
+		</div>
+		<div class="grid-container grid-container--7 grid-container--7-3">
+			<div class="grid-container__item">
+				<span class="grid-container__text">end</span>
+			</div>
+			<div class="grid-container__item">
+				<span class="grid-container__text">end</span>
+			</div>
+			<div class="grid-container__item">
+				<span class="grid-container__text">end</span>
+			</div>
+			<div class="grid-container__item">
+				<span class="grid-container__text">end</span>
+			</div>
+			<i class="grid-container__item-border"></i>
+			<i class="grid-container__item-border"></i>
+			<i class="grid-container__item-border"></i>
+			<i class="grid-container__item-border"></i>
+		</div>
+		<div class="grid-container grid-container--7 grid-container--7-4">
+			<div class="grid-container__item">
+				<span class="grid-container__text">stretch</span>
+			</div>
+			<div class="grid-container__item">
+				<span class="grid-container__text">stretch</span>
+			</div>
+			<div class="grid-container__item">
+				<span class="grid-container__text">stretch</span>
+			</div>
+			<div class="grid-container__item">
+				<span class="grid-container__text">stretch</span>
+			</div>
+			<i class="grid-container__item-border"></i>
+			<i class="grid-container__item-border"></i>
+			<i class="grid-container__item-border"></i>
+			<i class="grid-container__item-border"></i>
+		</div>
+		<pre>
+            <code><mark>.container</mark> {</code>
+           	<code> justify-items: start | center | end | stretch; <span class="comment"> // default stretch</span> </code>
+			<code>}</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<div class="grid-container grid-container--8 grid-container--8-1">
+			<div class="grid-container__item">
+				<span class="grid-container__text">start</span>
+			</div>
+			<div class="grid-container__item">
+				<span class="grid-container__text">start</span>
+			</div>
+			<div class="grid-container__item">
+				<span class="grid-container__text">start</span>
+			</div>
+			<div class="grid-container__item">
+				<span class="grid-container__text">start</span>
+			</div>
+			<i class="grid-container__item-border"></i>
+			<i class="grid-container__item-border"></i>
+			<i class="grid-container__item-border"></i>
+			<i class="grid-container__item-border"></i>
+		</div>
+		<div class="grid-container grid-container--8 grid-container--8-2">
+			<div class="grid-container__item">
+				<span class="grid-container__text">center</span>
+			</div>
+			<div class="grid-container__item">
+				<span class="grid-container__text">center</span>
+			</div>
+			<div class="grid-container__item">
+				<span class="grid-container__text">center</span>
+			</div>
+			<div class="grid-container__item">
+				<span class="grid-container__text">center</span>
+			</div>
+			<i class="grid-container__item-border"></i>
+			<i class="grid-container__item-border"></i>
+			<i class="grid-container__item-border"></i>
+			<i class="grid-container__item-border"></i>
+		</div>
+		<div class="grid-container grid-container--8 grid-container--8-3">
+			<div class="grid-container__item">
+				<span class="grid-container__text">end</span>
+			</div>
+			<div class="grid-container__item">
+				<span class="grid-container__text">end</span>
+			</div>
+			<div class="grid-container__item">
+				<span class="grid-container__text">end</span>
+			</div>
+			<div class="grid-container__item">
+				<span class="grid-container__text">end</span>
+			</div>
+			<i class="grid-container__item-border"></i>
+			<i class="grid-container__item-border"></i>
+			<i class="grid-container__item-border"></i>
+			<i class="grid-container__item-border"></i>
+		</div>
+		<div class="grid-container grid-container--8 grid-container--8-4">
+			<div class="grid-container__item">
+				<span class="grid-container__text">stretch</span>
+			</div>
+			<div class="grid-container__item">
+				<span class="grid-container__text">stretch</span>
+			</div>
+			<div class="grid-container__item">
+				<span class="grid-container__text">stretch</span>
+			</div>
+			<div class="grid-container__item">
+				<span class="grid-container__text">stretch</span>
+			</div>
+			<i class="grid-container__item-border"></i>
+			<i class="grid-container__item-border"></i>
+			<i class="grid-container__item-border"></i>
+			<i class="grid-container__item-border"></i>
+		</div>
+		<pre>
+            <code><mark>.container</mark> {</code>
+           	<code> align-items: start | end | center | stretch; <span class="comment"> // default stretch</span> </code>
+			<code>}</code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<div class="grid-container grid-container--12">
+			<div class="grid-container__item">
+				<span class="grid-container__text">Item</span>
+			</div>
+			<div class="grid-container__item">
+				<span class="grid-container__text">Item</span>
+			</div>
+			<div class="grid-container__item">
+				<span class="grid-container__text">Item</span>
+			</div>
+			<div class="grid-container__item">
+				<span class="grid-container__text">Item</span>
+			</div>
+			<div class="grid-container__item">
+				<span class="grid-container__text">Item</span>
+			</div>
+			<div class="grid-container__item">
+				<span class="grid-container__text">Item</span>
+			</div>
+			<div class="grid-container__item">
+				<span class="grid-container__text">Item</span>
+			</div>
+			<div class="grid-container__item">
+				<span class="grid-container__text">Item</span>
+			</div>
+			<div class="grid-container__item">
+				<span class="grid-container__text">Item</span>
+			</div>
+			<div class="grid-container__item">
+				<span class="grid-container__text">Item</span>
+			</div>
+			<div class="grid-container__item">
+				<span class="grid-container__text">Item</span>
+			</div>
+			<div class="grid-container__item">
+				<span class="grid-container__text">Item</span>
+			</div>
+			<div class="grid-container__item">
+				<span class="grid-container__text">Item</span>
+			</div>
+			<div class="grid-container__item">
+				<span class="grid-container__text">Item</span>
+			</div>
+			<div class="grid-container__item">
+				<span class="grid-container__text">Item</span>
+			</div>
+		</div>
+		<div class="grid-container grid-container--12 grid-container--12-1">
+			<i class="grid-container__item-border"></i>
+			<i class="grid-container__item-border"></i>
+			<i class="grid-container__item-border"></i>
+			<i class="grid-container__item-border"></i>
+			<i class="grid-container__item-border"></i>
+			<i class="grid-container__item-border"></i>
+			<i class="grid-container__item-border"></i>
+			<i class="grid-container__item-border"></i>
+			<i class="grid-container__item-border"></i>
+			<i class="grid-container__item-border"></i>
+			<i class="grid-container__item-border"></i>
+			<i class="grid-container__item-border"></i>
+			<i class="grid-container__item-border"></i>
+			<i class="grid-container__item-border"></i>
+			<i class="grid-container__item-border"></i>
+		</div>
+		<pre>
+            <code><mark>.item</mark> {</code>
+            <code> align-self: start | end | center | stretch; <span class="comment"> // default stretch</span> </code>
+			<code> justify-self: start | end | center | stretch; <span class="comment"> // default stretch</span></code>
+			<code>}</code>
+		</pre>
+
+	</section>
 	<section class="slide">
 		<h2>All kind of lists</h2>
 		<ol>
