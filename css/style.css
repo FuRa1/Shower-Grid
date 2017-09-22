@@ -518,14 +518,14 @@
     justify-content: space-evenly; }
 
 .grid-container--10 {
-  grid-template-columns: 265px;
+  grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 45px);
   margin: 0; }
   .grid-container--10 .grid-container__item {
     padding: 0; }
   .grid-container--10-wrp {
-    grid-template-columns: repeat(3, 270px);
-    grid-template-rows: 200px 260px; }
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 270px; }
   .grid-container--10-start {
     align-content: start; }
   .grid-container--10-end {
