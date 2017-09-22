@@ -8,18 +8,20 @@
   height: 480px;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  background-color: white;
   .grid-container__item {
-    border: 1px solid #ddd;
     text-transform: uppercase;
     position: relative;
+    border: 1px solid darken(#ddd, 20%);
+    background-color: lighten(#ddd, 5%);
   }
   .grid-area {
-    border-color: rgb(138, 0, 84);
+    border-color: #8A0054;
     grid-column: 2 / 4;
     grid-row: 2 / 4;
+    background-color: lighten(#8A0054, 50%);
     &:hover {
-      background: rgb(138, 0, 84);
+      background: #8A0054;
+
       color: white;
     }
   }
@@ -27,6 +29,7 @@
     border-color: rgba(2, 143, 118, .8);
     grid-column: 5;
     grid-row: 1 / 6;
+    background-color: lighten(#028F76, 50%);
     &:hover {
       background: rgba(2, 143, 118, .8);
       color: white;
@@ -34,8 +37,8 @@
     }
   }
   .grid-row {
-    background: rgba(255, 255, 255, .5);
     border-color: rgba(38, 95, 163, .8);
+    background-color: lighten(#265FA3, 50%);
     grid-column: 1 / 6;
     grid-row: 5 / 6;
     &:hover {
@@ -45,9 +48,10 @@
     }
   }
   .grid-cell {
-    border-color: rgb(255, 0, 72);
+    border-color: #FF0048;;
+    background-color: lighten(#FF0048, 30%);
     &:hover {
-      background: rgb(255, 0, 72);
+      background: #FF0048;
       color: white;
     }
   }
@@ -104,9 +108,45 @@
           "aside-L middle middle . aside-R"
           "bottom bottom bottom bottom bottom";
 }
+
+.grid-container--5{
+  grid-template-columns: 200px 200px;
+  grid-template-rows: 80px 80px;
+  grid-auto-columns: 100px;
+  grid-auto-rows: 50px;
+  &-borders{
+    grid-template-columns: repeat(2, 200px)  repeat(3, 100px);
+    grid-template-rows: repeat(2, 80px)  repeat(3, 50px);
+    height: 400px;
+    position: absolute;
+    top: 15px;
+    left: 100px;
+    width: 824px;
+  }
+  .grid-container__item{
+    &--1{
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+    &--2{
+      grid-column: 4 / 5;
+      grid-row: 2 / 3;
+    }
+    &--3{
+      grid-column: 5 / 6;
+      grid-row: 3 / 4;
+    }
+    &--4{
+      grid-column: 2 / 3;
+      grid-row: 3 / 4;
+    }
+  }
+
+}
+
 .grid-container--7 {
   height: 100px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
   @for $i from 1 through 4 {
     .#{grid-container__item-border}:nth-of-type(#{$i}) {
@@ -134,7 +174,7 @@
 
 .grid-container--8 {
   height: 100px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4 ,1fr);
   grid-template-rows: 1fr;
   @for $i from 1 through 4 {
     .#{grid-container__item-border}:nth-of-type(#{$i}) {
@@ -158,22 +198,6 @@
   &-stretch {
     align-items: stretch;
   }
-}
-.grid-container--8 {
-  height: 100px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  @for $i from 1 through 4 {
-    .#{grid-container__item-border}:nth-of-type(#{$i}) {
-      grid-column: #{$i} / #{$i+1};
-      grid-row: 1 / 2;
-    }
-    .#{grid-container__item}:nth-of-type(#{$i}) {
-      grid-column: #{$i} / #{$i+1};
-      grid-row: 1 / 2;
-    }
-  }
-
 }
 
 .grid-container--9 {
@@ -237,7 +261,7 @@
   height: 400px;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  &-1 {
+  &-borders {
     height: 400px;
     position: absolute;
     top: 15px;

@@ -37,7 +37,7 @@
 .grid-container.grid-container--clear-items{
   .grid-container__item{
     filter: none;
-    background-color: white;
+    //background-color: white;
   }
 }
 
@@ -82,5 +82,7 @@
 .grid-container__item-border{
 	align-self: stretch;
 	justify-self: stretch;
-	border: 1px solid #ddd;
+	border: 1px solid darken(#ddd, 20%);
+    background-color: lighten(#ddd, 5%);
+    z-index: -1;
 }
