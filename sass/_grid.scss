@@ -77,7 +77,33 @@
   }
 
 }
-
+.grid-container--4{
+  .grid-container__item--area{
+    &-top{
+      grid-area: top;
+    }
+    &-aside-L{
+      grid-area: aside-L;
+    }
+    &-aside-R{
+      grid-area: aside-R;
+    }
+    &-bottom{
+      grid-area: bottom;
+    }
+    &-middle{
+      grid-area: middle;
+    }
+  }
+  height: 300px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+          "aside-L top top top aside-R"
+          "aside-L middle middle middle aside-R"
+          "aside-L middle middle middle aside-R"
+          "bottom bottom bottom bottom bottom";
+}
 .grid-container--7 {
   height: 100px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
