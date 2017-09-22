@@ -92,16 +92,16 @@
       grid-row: 1 / 2;
     }
   }
-  &-1 {
+  &-start {
     justify-items: start;
   }
-  &-2 {
+  &-center {
     justify-items: center;
   }
-  &-3 {
+  &-end {
     justify-items: end;
   }
-  &-4 {
+  &-stretch {
     justify-items: stretch;
   }
 }
@@ -120,16 +120,16 @@
       grid-row: 1 / 2;
     }
   }
-  &-1 {
+ &-start {
     align-items: start;
   }
-  &-2 {
+  &-center {
     align-items: center;
   }
-  &-3 {
+  &-end {
     align-items: end;
   }
-  &-4 {
+  &-stretch {
     align-items: stretch;
   }
 }
@@ -152,34 +152,67 @@
 
 .grid-container--9 {
   grid-template-columns: repeat(3, 200px);
-  grid-template-rows: 50px;
-  &-1{
+  grid-template-rows: 55px;
+  margin-bottom: 10px;
+  &-start{
     justify-content: start;
   }
-  &-2{
+  &-end{
     justify-content: end;
   }
-  &-3{
+  &-center{
     justify-content: center;
   }
-  &-4{
+  &-around{
     justify-content: space-around;
   }
-  &-5{
+  &-between{
     justify-content: space-between;
   }
-  &-6{
+  &-evenly{
     justify-content: space-evenly;
   }
 }
 
+.grid-container--10 {
+  .grid-container__item{
+    padding: 0;
+  }
+  grid-template-columns: 265px;
+  grid-template-rows: repeat(3, 45px);
+  margin: 0;
+  &-wrp{
+    grid-template-columns: repeat(3, 270px);
+    grid-template-rows: 200px 260px;
+  }
+  &-start{
+    align-content: start;
+  }
+  &-end{
+    align-content: end;
+  }
+  &-center{
+    align-content: center;
+  }
+  &-around{
+    align-content: space-around;
+  }
+  &-between{
+    align-content: space-between;
+  }
+  &-evenly{
+    align-content: space-evenly;
+  }
+}
+
+
 
 .grid-container--12 {
-  height: 300px;
+  height: 400px;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr);
   &-1 {
-    height: 300px;
+    height: 400px;
     position: absolute;
     top: 15px;
     left: 100px;

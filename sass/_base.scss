@@ -2,7 +2,6 @@
   .#{grid-container__item}:nth-of-type(#{$i}){
     position: relative;
     filter: hue-rotate(#{45*$i}deg);
-    padding: 7px 5px;
     &::before{
       content: '#{$i}';
       display: block;
@@ -22,6 +21,7 @@
   &__item{
     background-color: chartreuse;
     text-align: center;
+    padding: 5px;
   }
 }
 .grid-container--border-items{
