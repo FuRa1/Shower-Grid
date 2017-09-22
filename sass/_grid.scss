@@ -100,8 +100,8 @@
   grid-template-rows: auto;
   grid-template-areas:
           "aside-L top top top aside-R"
-          "aside-L middle middle middle aside-R"
-          "aside-L middle middle middle aside-R"
+          "aside-L middle middle . aside-R"
+          "aside-L middle middle . aside-R"
           "bottom bottom bottom bottom bottom";
 }
 .grid-container--7 {

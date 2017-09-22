@@ -401,7 +401,7 @@
   height: 300px;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto;
-  grid-template-areas: "aside-L top top top aside-R" "aside-L middle middle middle aside-R" "aside-L middle middle middle aside-R" "bottom bottom bottom bottom bottom"; }
+  grid-template-areas: "aside-L top top top aside-R" "aside-L middle middle . aside-R" "aside-L middle middle . aside-R" "bottom bottom bottom bottom bottom"; }
   .grid-container--4 .grid-container__item--area-top {
     grid-area: top; }
   .grid-container--4 .grid-container__item--area-aside-L {
