@@ -41,7 +41,7 @@
   .grid-row {
     border-color: rgba(38, 95, 163, .8);
     background-color: lighten(#265FA3, 50%);
-    grid-column: 1 / 6;
+    grid-column: 1 / 7;
     grid-row: 5 / 6;
     &:hover {
       background: rgba(38, 95, 163, .8);
@@ -160,20 +160,20 @@
   }
   .grid-container__item{
     &--1{
-      grid-column: 1 / 2;
-      grid-row: 1 / 2;
+      grid-column: 1;
+      grid-row: 1;
     }
     &--2{
-      grid-column: 4 / 5;
-      grid-row: 2 / 3;
+      grid-column: 4;
+      grid-row: 2;
     }
     &--3{
-      grid-column: 5 / 6;
-      grid-row: 3 / 4;
+      grid-column: 5;
+      grid-row: 3;
     }
     &--4{
-      grid-column: 2 / 3;
-      grid-row: 3 / 4;
+      grid-column: 2;
+      grid-row: 3;
     }
   }
 
