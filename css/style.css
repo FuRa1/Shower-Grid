@@ -341,8 +341,10 @@
 
 .grid-container--1 {
   height: 480px;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr); }
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 0;
+  opacity: 0.8; }
   .grid-container--1 .grid-container__item {
     text-transform: uppercase;
     position: relative;
@@ -358,7 +360,7 @@
       color: white; }
   .grid-container--1 .grid-column {
     border-color: rgba(2, 143, 118, 0.8);
-    grid-column: 5;
+    grid-column: 6;
     grid-row: 1 / 6;
     background-color: #93fdeb; }
     .grid-container--1 .grid-column:hover {
@@ -380,6 +382,36 @@
     .grid-container--1 .grid-cell:hover {
       background: #FF0048;
       color: white; }
+  .grid-container--1-borders {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 480px;
+    position: absolute;
+    top: 99px;
+    left: 100px;
+    width: 824px;
+    z-index: -1;
+    grid-gap: 0; }
+    .grid-container--1-borders .grid-container__item-border {
+      background: none;
+      border: 1px solid black; }
+
+.grid-line {
+  width: 4px;
+  height: 494px;
+  position: absolute;
+  z-index: 2;
+  top: 85px;
+  left: 647px;
+  background-color: red; }
+  .grid-line::after {
+    position: absolute;
+    top: -50px;
+    left: -56px;
+    display: block;
+    text-transform: uppercase;
+    content: 'Grid Line';
+    width: 120px; }
 
 .grid-container--2 {
   height: 330px;
@@ -405,7 +437,7 @@
   height: 300px;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto;
-  grid-template-areas: "aside-L top top top aside-R" "aside-L middle middle . aside-R" "aside-L middle middle . aside-R" "bottom bottom bottom bottom bottom"; }
+  grid-template-areas: "aside-L top top top aside-R" "aside-L middle middle . aside-R" "aside-L middle middle . aside-R" "bottom bottom bottom bottom bottom"; }
   .grid-container--4 .grid-container__item--area-top {
     grid-area: top; }
   .grid-container--4 .grid-container__item--area-aside-L {
