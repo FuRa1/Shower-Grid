@@ -334,6 +334,15 @@
   background-color: #eaeaea;
   z-index: -1; }
 
+.caniuse {
+  position: absolute;
+  left: 40px;
+  top: 70px; }
+  .caniuse-1 {
+    width: 900px; }
+  .caniuse-2 {
+    width: 900px; }
+
 .grid-container {
   display: grid;
   grid-column-gap: 5px;

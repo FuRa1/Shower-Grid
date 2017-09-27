@@ -85,3 +85,14 @@
     background-color: lighten(#ddd, 5%);
     z-index: -1;
 }
+.caniuse{
+  position: absolute;
+  left: 40px;
+  top: 70px;
+  &-1{
+    width: 900px;
+  }
+  &-2{
+    width: 900px;
+  }
+}
