@@ -77,6 +77,19 @@
     -webkit-text-stroke: 1px black;
   }
 }
+#cover.end.slide {
+  background: none;
+  background-color: white;
+  h2 span{
+    color: chartreuse;
+    margin-left: -20px;
+  }
+  @for $i from 1 through 20{
+    h2 span:nth-of-type(#{$i}){
+      filter: hue-rotate(#{45*$i}deg);
+    }
+  }
+}
 
 .grid-container__item-border{
 	align-self: stretch;
